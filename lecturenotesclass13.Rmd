@@ -106,6 +106,8 @@ as the "best guess", or estimate, for the population parameter.
 Suppose we were interested in the population mean. What would be natural
 point estimate to use?
 
+The natural point estimate would be mean, $\bar{x}$ . 
+
 
 | Quantity           | Parameter  | Statistic   |
 |--------------------|------------|-------------|
@@ -117,6 +119,9 @@ point estimate to use?
 
 
 What is the downside to using point estimates?
+
+The downside is that it is harder to get the right answer, whereas an interval 
+provides more of a range, that increases accuracy but decreases precision. 
 
 ## Confidence intervals
 
@@ -146,6 +151,12 @@ Suppose you randomly sample 50 students and 5 of them are left handed. If you
 were to take another random sample of 50 students, how many would you expect 
 to be left handed? Would you be surprised if only 3 of them were left handed? 
 Would you be surprised if 40 of them were left handed?
+
+
+We would expect 5 students to be left handed after the initial sample. I
+wouldn't be surprised if only 3 were left handed because there is not that much 
+variability (10% of sample to 6%). If 40 of them were left handed, that would be
+very surprising and suggest that we had a biased sample. 
 
 ## Quantifying the variability of a sample statistic
 
@@ -189,7 +200,7 @@ Consider 20 1-bedroom apartments that were randomly selected on
 Craigslist Manhattan from apartments listed as "by owner".
 
 ```{r data_manhattan}
-manhattan <- read_csv("~/manhattan.csv")
+manhattan <- read_csv("~/R/lecture-note-class-13-aarushivenk/manhattan.csv")
 ```
 
 Consider 3-10 day survival of mice randomized to various
